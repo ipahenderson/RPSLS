@@ -6,7 +6,7 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 /**
- * Created by eliotshort on 20/12/2017.
+ * Created by ianhenderson on 20/12/2017.
  */
 
 public class LogicTest {
@@ -29,7 +29,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Rock");
         testHand.setPlay("Scissors");
-        assertEquals("Computer played: Rock\n\nPlayer played: Scissors\n\nCOMPUTER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Rock<br/><br/>Player played: Scissors<br/><br/><b>COMPUTER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -37,7 +37,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Rock");
         testHand.setPlay("Lizard");
-        assertEquals("Computer played: Rock\n\nPlayer played: Lizard\n\nCOMPUTER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Rock<br/><br/>Player played: Lizard<br/><br/><b>COMPUTER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -45,7 +45,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Paper");
         testHand.setPlay("Rock");
-        assertEquals("Computer played: Paper\n\nPlayer played: Rock\n\nCOMPUTER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Paper<br/><br/>Player played: Rock<br/><br/><b>COMPUTER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -53,7 +53,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Paper");
         testHand.setPlay("Spock");
-        assertEquals("Computer played: Paper\n\nPlayer played: Spock\n\nCOMPUTER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Paper<br/><br/>Player played: Spock<br/><br/><b>COMPUTER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -61,7 +61,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Scissors");
         testHand.setPlay("Paper");
-        assertEquals("Computer played: Scissors\n\nPlayer played: Paper\n\nCOMPUTER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Scissors<br/><br/>Player played: Paper<br/><br/><b>COMPUTER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -69,7 +69,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Scissors");
         testHand.setPlay("Lizard");
-        assertEquals("Computer played: Scissors\n\nPlayer played: Lizard\n\nCOMPUTER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Scissors<br/><br/>Player played: Lizard<br/><br/><b>COMPUTER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -77,7 +77,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Lizard");
         testHand.setPlay("Spock");
-        assertEquals("Computer played: Lizard\n\nPlayer played: Spock\n\nCOMPUTER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Lizard<br/><br/>Player played: Spock<br/><br/><b>COMPUTER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -85,7 +85,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Lizard");
         testHand.setPlay("Paper");
-        assertEquals("Computer played: Lizard\n\nPlayer played: Paper\n\nCOMPUTER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Lizard<br/><br/>Player played: Paper<br/><br/><b>COMPUTER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -93,7 +93,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Spock");
         testHand.setPlay("Rock");
-        assertEquals("Computer played: Spock\n\nPlayer played: Rock\n\nCOMPUTER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Spock<br/><br/>Player played: Rock<br/><br/><b>COMPUTER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -101,7 +101,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Spock");
         testHand.setPlay("Scissors");
-        assertEquals("Computer played: Spock\n\nPlayer played: Scissors\n\nCOMPUTER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Spock<br/><br/>Player played: Scissors<br/><br/><b>COMPUTER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -109,7 +109,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Scissors");
         testHand.setPlay("Rock");
-        assertEquals("Computer played: Scissors\n\nPlayer played: Rock\n\nPLAYER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Scissors<br/><br/>Player played: Rock<br/><br/><b>PLAYER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -117,7 +117,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Lizard");
         testHand.setPlay("Rock");
-        assertEquals("Computer played: Lizard\n\nPlayer played: Rock\n\nPLAYER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Lizard<br/><br/>Player played: Rock<br/><br/><b>PLAYER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -125,7 +125,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Rock");
         testHand.setPlay("Paper");
-        assertEquals("Computer played: Rock\n\nPlayer played: Paper\n\nPLAYER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Rock<br/><br/>Player played: Paper<br/><br/><b>PLAYER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -133,7 +133,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Spock");
         testHand.setPlay("Paper");
-        assertEquals("Computer played: Spock\n\nPlayer played: Paper\n\nPLAYER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Spock<br/><br/>Player played: Paper<br/><br/><b>PLAYER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -141,7 +141,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Paper");
         testHand.setPlay("Scissors");
-        assertEquals("Computer played: Paper\n\nPlayer played: Scissors\n\nPLAYER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Paper<br/><br/>Player played: Scissors<br/><br/><b>PLAYER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -149,7 +149,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Lizard");
         testHand.setPlay("Scissors");
-        assertEquals("Computer played: Lizard\n\nPlayer played: Scissors\n\nPLAYER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Lizard<br/><br/>Player played: Scissors<br/><br/><b>PLAYER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -157,7 +157,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Spock");
         testHand.setPlay("Lizard");
-        assertEquals("Computer played: Spock\n\nPlayer played: Lizard\n\nPLAYER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Spock<br/><br/>Player played: Lizard<br/><br/><b>PLAYER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -165,7 +165,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Paper");
         testHand.setPlay("Lizard");
-        assertEquals("Computer played: Paper\n\nPlayer played: Lizard\n\nPLAYER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Paper<br/><br/>Player played: Lizard<br/><br/><b>PLAYER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -173,7 +173,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Rock");
         testHand.setPlay("Spock");
-        assertEquals("Computer played: Rock\n\nPlayer played: Spock\n\nPLAYER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Rock<br/><br/>Player played: Spock<br/><br/><b>PLAYER WINS.", testGame.game(testCounter));
     }
 
     @Test
@@ -181,7 +181,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Scissors");
         testHand.setPlay("Spock");
-        assertEquals("Computer played: Scissors\n\nPlayer played: Spock\n\nPLAYER WINS.", testGame.game(testCounter));
+        assertEquals("Computer played: Scissors<br/><br/>Player played: Spock<br/><br/><b>PLAYER WINS.", testGame.game(testCounter));
     }
 
 
@@ -191,7 +191,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Rock");
         testHand.setPlay("Rock");
-        assertEquals("Computer played: Rock\n\nPlayer played: Rock\n\nIT'S A DRAW.", testGame.game(testCounter));
+        assertEquals("Computer played: Rock<br/><br/>Player played: Rock<br/><br/><b>IT'S A DRAW.", testGame.game(testCounter));
     }
 
     @Test
@@ -199,7 +199,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Paper");
         testHand.setPlay("Paper");
-        assertEquals("Computer played: Paper\n\nPlayer played: Paper\n\nIT'S A DRAW.", testGame.game(testCounter));
+        assertEquals("Computer played: Paper<br/><br/>Player played: Paper<br/><br/><b>IT'S A DRAW.", testGame.game(testCounter));
     }
 
     @Test
@@ -207,7 +207,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Scissors");
         testHand.setPlay("Scissors");
-        assertEquals("Computer played: Scissors\n\nPlayer played: Scissors\n\nIT'S A DRAW.", testGame.game(testCounter));
+        assertEquals("Computer played: Scissors<br/><br/>Player played: Scissors<br/><br/><b>IT'S A DRAW.", testGame.game(testCounter));
     }
 
     @Test
@@ -215,7 +215,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Lizard");
         testHand.setPlay("Lizard");
-        assertEquals("Computer played: Lizard\n\nPlayer played: Lizard\n\nIT'S A DRAW.", testGame.game(testCounter));
+        assertEquals("Computer played: Lizard<br/><br/>Player played: Lizard<br/><br/><b>IT'S A DRAW.", testGame.game(testCounter));
     }
 
     @Test
@@ -223,7 +223,7 @@ public class LogicTest {
         testHand.getOptions().clear();
         testHand.getOptions().add("Spock");
         testHand.setPlay("Spock");
-        assertEquals("Computer played: Spock\n\nPlayer played: Spock\n\nIT'S A DRAW.", testGame.game(testCounter));
+        assertEquals("Computer played: Spock<br/><br/>Player played: Spock<br/><br/><b>IT'S A DRAW.", testGame.game(testCounter));
     }
     @Test
     public void canChangeCounter(){

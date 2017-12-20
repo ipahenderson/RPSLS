@@ -36,16 +36,16 @@ public class Game {
                 (computerHand.equals("Spock") && playerHand.equals("Scissors"))
                 )
         {
-            win = "Computer played: " + computerHand + "<br/><br/>Player played: " + playerHand + "<br><br><b>" + "COMPUTER WINS." + "</b></br></br>";
+            win = "Computer played: " + computerHand + "<br/><br/>Player played: " + playerHand + "<br/><br/><b>" + "COMPUTER WINS.";
             counterLoss ++;
             counter.setLossCounter(counterLoss);
         }
         else if (playerHand == computerHand){
-            win = "Computer played: " + computerHand + "<br/><br/>Player played: " + playerHand + "<br><br><b>" + "IT'S A DRAW." + "</b></br></br>";
+            win = "Computer played: " + computerHand + "<br/><br/>Player played: " + playerHand + "<br/><br/><b>" + "IT'S A DRAW.";
 
         }
         else{
-            win = "Computer played: " + computerHand + "<br/><br/>Player played: " + playerHand + "<br><br><b>" + "PLAYER WINS." + "</b></br></br>";
+            win = "Computer played: " + computerHand + "<br/><br/>Player played: " + playerHand + "<br/><br/><b>" + "PLAYER WINS.";
             counterWin ++;
             counter.setWinCounter(counterWin);
         }
