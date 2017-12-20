@@ -19,6 +19,7 @@ public class Game {
 
         String computerHand = hand.computerPlay();
         String playerHand = hand.getPlay();
+        String play = "Computer played: " + computerHand + "<br/><br/>Player played: " + playerHand + "<br/><br/><b>";
         String win;
         int counterLoss = counter.getLossCounter();
         int counterWin = counter.getWinCounter();
@@ -36,16 +37,16 @@ public class Game {
                 (computerHand.equals("Spock") && playerHand.equals("Scissors"))
                 )
         {
-            win = "Computer played: " + computerHand + "<br/><br/>Player played: " + playerHand + "<br/><br/><b>" + "COMPUTER WINS.";
+            win =  play + "COMPUTER WINS.";
             counterLoss ++;
             counter.setLossCounter(counterLoss);
         }
         else if (playerHand == computerHand){
-            win = "Computer played: " + computerHand + "<br/><br/>Player played: " + playerHand + "<br/><br/><b>" + "IT'S A DRAW.";
+            win = play + "IT'S A DRAW.";
 
         }
         else{
-            win = "Computer played: " + computerHand + "<br/><br/>Player played: " + playerHand + "<br/><br/><b>" + "PLAYER WINS.";
+            win = play + "PLAYER WINS.";
             counterWin ++;
             counter.setWinCounter(counterWin);
         }
