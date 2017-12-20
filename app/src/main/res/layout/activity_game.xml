@@ -110,7 +110,7 @@
 
     <TextView
         android:id="@+id/loss_counter"
-        android:layout_width="131dp"
+        android:layout_width="181dp"
         android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -118,7 +118,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="casual"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/rock"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,7 +129,7 @@
 
     <TextView
         android:id="@+id/win_counter"
-        android:layout_width="131dp"
+        android:layout_width="156dp"
         android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -138,7 +138,7 @@
         android:fontFamily="casual"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/rock"
         app:layout_constraintEnd_toStartOf="@+id/loss_counter"

@@ -42,8 +42,8 @@ public class GameActivity extends AppCompatActivity {
 
     public void executeGame(){
         gameResult.setText(Html.fromHtml(game.game(counter)));
-        winCounter.setText("Wins: " + counter.getWinCounter());
-        lossCounter.setText("Losses: " + counter.getLossCounter());
+        winCounter.setText("Player Wins: " + counter.getWinCounter());
+        lossCounter.setText("Computer Wins: " + counter.getLossCounter());
     }
 
     public void onRockButtonClick(View view){
