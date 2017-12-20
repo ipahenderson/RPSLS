@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2166a7"
+    tools:context="com.example.eliotshort.rockpaperscissors.GameActivity">
+
+    <TextView
+        android:id="@+id/game_result"
+        android:layout_width="354dp"
+        android:layout_height="191dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:text="Pick a hand below to start..."
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+
+    <ImageButton
+        android:id="@+id/paper"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/paper"
+        android:onClick="onPaperButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_result"
+        app:layout_constraintVertical_bias="0.286" />
+
+
+    <ImageButton
+        android:id="@+id/scissors"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/scissors"
+        android:onClick="onScissorsButtonClick"
+        app:layout_constraintBottom_toTopOf="@+id/spock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toEndOf="@+id/paper"
+        app:layout_constraintTop_toBottomOf="@+id/game_result" />
+
+
+    <ImageButton
+        android:id="@+id/lizard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/lizard"
+        android:onClick="onLizardButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rock"
+        app:layout_constraintTop_toBottomOf="@+id/paper"
+        app:layout_constraintVertical_bias="0.51" />
+
+
+    <ImageButton
+        android:id="@+id/spock"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spock"
+        android:onClick="onSpockButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scissors"
+        app:layout_constraintTop_toBottomOf="@+id/paper"
+        app:layout_constraintVertical_bias="0.51" />
+
+
+    <ImageButton
+        android:id="@+id/rock"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rock"
+        android:onClick="onRockButtonClick"
+        app:layout_constraintBottom_toTopOf="@+id/lizard"
+        app:layout_constraintEnd_toStartOf="@+id/paper"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_result" />
+
+    <TextView
+        android:id="@+id/loss_counter"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_result"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/win_counter"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rock"
+        app:layout_constraintEnd_toStartOf="@+id/loss_counter"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_result"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>
