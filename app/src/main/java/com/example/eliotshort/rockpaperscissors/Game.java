@@ -7,11 +7,11 @@ import android.text.style.StyleSpan;
  * Created by ianhenderson on 20/12/2017.
  */
 
-public class RockPaperScissorsLogic{
+public class Game {
 
     Hand hand;
 
-    public RockPaperScissorsLogic(Hand hand) {
+    public Game(Hand hand) {
         this.hand = hand;
     }
 

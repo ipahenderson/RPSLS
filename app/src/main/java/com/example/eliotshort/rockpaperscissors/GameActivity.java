@@ -2,9 +2,7 @@ package com.example.eliotshort.rockpaperscissors;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -19,7 +17,7 @@ public class GameActivity extends AppCompatActivity {
     ImageButton spockButton;
     ImageButton lizardButton;
     Hand hand;
-    RockPaperScissorsLogic game;
+    Game game;
     Counter counter;
 
 
@@ -48,27 +46,27 @@ public class GameActivity extends AppCompatActivity {
     }
 
     public void onRockButtonClick(View view){
-        game = new RockPaperScissorsLogic(hand = new Hand("Rock"));
+        game = new Game(hand = new Hand("Rock"));
         executeGame();
     }
 
     public void onPaperButtonClick(View view){
-        game = new RockPaperScissorsLogic(hand = new Hand("Paper"));
+        game = new Game(hand = new Hand("Paper"));
         executeGame();
     }
 
     public void onScissorsButtonClick(View view){
-        game = new RockPaperScissorsLogic(hand = new Hand("Scissors"));
+        game = new Game(hand = new Hand("Scissors"));
         executeGame();
     }
 
     public void onLizardButtonClick(View view){
-        game = new RockPaperScissorsLogic(hand = new Hand("Lizard"));
+        game = new Game(hand = new Hand("Lizard"));
         executeGame();
     }
 
     public void onSpockButtonClick(View view){
-        game = new RockPaperScissorsLogic(hand = new Hand("Spock"));
+        game = new Game(hand = new Hand("Spock"));
         executeGame();
     }
 

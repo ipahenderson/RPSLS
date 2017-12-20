@@ -11,7 +11,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class LogicTest {
 
-    RockPaperScissorsLogic testGame;
+    Game testGame;
     Hand testHand;
     Counter testCounter;
 
@@ -20,7 +20,7 @@ public class LogicTest {
     public void before(){
 
         testHand = new Hand("Scissors");
-        testGame = new RockPaperScissorsLogic(testHand);
+        testGame = new Game(testHand);
         testCounter = new Counter();
     }
 
