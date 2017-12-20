@@ -2,6 +2,7 @@ package com.example.eliotshort.rockpaperscissors;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -40,7 +41,7 @@ public class GameActivity extends AppCompatActivity {
 
 
     public void executeGame(){
-        gameResult.setText(game.game(counter));
+        gameResult.setText(Html.fromHtml(game.game(counter)));
         winCounter.setText("Wins: " + counter.getWinCounter());
         lossCounter.setText("Losses: " + counter.getLossCounter());
     }
